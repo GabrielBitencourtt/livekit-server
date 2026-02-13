@@ -1,0 +1,5 @@
+port: 7880
+rtc:
+  use_external_ip: true
+keys:
+  APIsx7V28RDJcpD: H1CVe0FzWjkbvPLxaaGNgOBfwmZtOfoNZvwcVwB7NHaA
