@@ -1,9 +1,20 @@
 :8080 {
-    handle /recordings/* {
-        root * /data
-        file_server
+    reverse_proxy localhost:7880 {
+        header_up Host {host}
+        header_up X-Forwarded-Proto {scheme}
     }
-    handle {
-        reverse_proxy localhost:7880
+    header Access-Control-Allow-Origin *
+    header Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    header Access-Control-Allow-Headers *
+    
+    @options method OPTIONS
+    handle @options {
+        respond 204
     }
+}
+
+:8081 {
+    root * /recordings
+    file_server
+    header Access-Control-Allow-Origin *
 }
