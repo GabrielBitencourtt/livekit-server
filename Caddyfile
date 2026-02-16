@@ -1,0 +1,9 @@
+:8080 {
+    handle /recordings/* {
+        root * /data
+        file_server
+    }
+    handle {
+        reverse_proxy localhost:7880
+    }
+}
