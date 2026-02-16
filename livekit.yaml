@@ -4,7 +4,10 @@ rtc:
   port_range_end: 60000
   use_external_ip: true
   tcp_port: 7881
-
+webhook:
+  urls:
+    - "https://btviayqxqeymggdkilem.supabase.co/functions/v1/livekit-webhook"
+  api_key: "APIsx7V28RDJcpD"
 keys:
   APIsx7V28RDJcpD: H1CVe0FzWjkbvPLxaaGNgOBfwmZtOfoNZvwcVwB7NHaA
 redis:
