@@ -8,6 +8,13 @@ rtc:
 keys:
   APIsx7V28RDJcpD: H1CVe0FzWjkbvPLxaaGNgOBfwmZtOfoNZvwcVwB7NHaA
 
+room:
+  empty_timeout: 300
+
+egress:
+  local:
+    directory: /data/recordings
+
 webhook:
   urls:
     - "https://btviayqxqeymggdkilem.supabase.co/functions/v1/livekit-webhook"
