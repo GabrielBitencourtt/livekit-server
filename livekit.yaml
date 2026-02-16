@@ -7,5 +7,7 @@ rtc:
 
 keys:
   APIsx7V28RDJcpD: H1CVe0FzWjkbvPLxaaGNgOBfwmZtOfoNZvwcVwB7NHaA
+redis:
+  address: "redis://default:CCUEjPawgudeQXuQdznNXJViNEHBrchz@crossover.proxy.rlwy.net:41212"
 logging:
   level: info
