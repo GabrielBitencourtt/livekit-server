@@ -4,10 +4,10 @@ rtc:
   port_range_end: 60000
   use_external_ip: true
   tcp_port: 7881
-  node_ip: ${RAILWAY_PUBLIC_DOMAIN}
+  node_ip: "livekit-server-production-9132.up.railway.app"
 turn:
   enabled: true
-  domain: ${RAILWAY_PUBLIC_DOMAIN}
+  domain: "livekit-server-production-9132.up.railway.app"
   tls_port: 5349
   udp_port: 3478
 webhook:
