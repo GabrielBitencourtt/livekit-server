@@ -4,6 +4,7 @@ rtc:
   port_range_end: 60000
   use_external_ip: true
   tcp_port: 7881
+  node_ip: ${RAILWAY_PUBLIC_DOMAIN}
 webhook:
   urls:
     - "https://btviayqxqeymggdkilem.supabase.co/functions/v1/livekit-webhook"
